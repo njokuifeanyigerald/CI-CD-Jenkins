@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: springboot
-        image: bopgeek/sonarqube:v1.latest
+        image: imagename
         imagePullPolicy: Always
         resources:
           limits:
@@ -24,7 +24,7 @@ spec:
               memory: "500Mi"
               cpu: "500m"
         ports:
-        - containerPort: 9099
+        - containerPort: 7000
         livenessProbe:
           httpGet:
             path: /
